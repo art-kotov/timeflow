@@ -92,34 +92,57 @@
 </div>
 <div class="assets">
   <h1>Card Actions</h1>
-  <button class="card-action delete">
-    <span class="helper">Delete</span>
-  </button>
+  <button class="card-action delete"></button>
   <button class="card-action deploy"></button>
   <button class="card-action duplicate"></button>
   <button class="card-action edit"></button>
-  <button class="card-action monitor">
-    <span class="helper">Monitor</span>
-  </button>
-  <button class="card-action pause">
-    <span class="helper">Pause</span>
-  </button>
+  <button class="card-action monitor"></button>
+  <button class="card-action pause"></button>
   <button class="card-action view-logs"></button>
   <button class="card-action arrow-bot"></button>
   <button class="card-action arrow-top"></button>
+  <button class="card-btn card-btn--delete">
+    Delete
+  </button>
 </div>
 <div class="assets">
   <h1>Project Cards</h1>
-  <div class="project-card">
-    <h2 class="project-card__header">
+
+  <div class="card card--project">
+    <h2 class="card__header">
       Customer Value Project
     </h2>
-    <div>
+    <div class="card__body">
       <label for="owner"></label>
       <input type="email" name="owner" id="owner">
-      <hr>
+    </div>
+    <div class="card__footer">
+      <button class="card-btn card-btn--show">
+        Show
+      </button>
+      <button class="card-action edit"></button>
     </div>
   </div>
+
+  <div class="card">
+    <h2 class="card__header">
+      Customer Value Project
+    </h2>
+    <div class="card__body">
+      <label for="owner"></label>
+      <input type="email" name="owner" id="owner">
+    </div>
+    <div class="card__footer">
+      <button class="card-action edit"></button>
+      <button class="card-action duplicate"></button>
+      <button class="card-action deploy"></button>
+      <button class="card-action pause"></button>
+      <button class="card-action view-logs"></button>
+      <button class="card-action monitor"></button>
+      <button class="card-action delete"></button>
+    </div>
+  </div>
+
 </div>
 </body>
 </html>

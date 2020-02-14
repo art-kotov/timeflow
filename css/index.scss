@@ -23,9 +23,11 @@ img {
   max-width: 1170px;
   margin: auto;
 }
+
 .assets {
   margin-bottom: 40px;
 }
+
 // Header
 .logo-image {
   margin: 0 10px;
@@ -124,7 +126,7 @@ img {
 
     &__item {
       &:nth-last-child(1) .submenu__link:after {
-        display: none;
+        opacity: 0;
       }
     }
 
@@ -237,18 +239,61 @@ img {
   max-width: 500px;
   margin: 100px auto 0;
   text-align: center;
+
   &__header {
     font-size: 30px;
     font-weight: bold;
     color: #803c8a;
     margin-bottom: 35px;
   }
+
   p {
     font-size: 13px;
     color: #4F4F4F;
     margin-bottom: 15px;
   }
+
   .btn {
     margin-top: 35px;
+  }
+}
+
+// Project card
+.card {
+  width: 370px;
+  border-radius: 15px;
+  background: #FFFFFF;
+  box-shadow: 0 6px 12px rgba(164, 109, 255, 0.1);
+  overflow: hidden;
+
+  &__header {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 44px;
+    background: $gradient;
+    color: white;
+  }
+
+  &__body {
+    padding: 15px;
+
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-top: 1px solid rgba(209, 197, 218, 0.5);
+  }
+}
+
+.card--project {
+  @extend .card;
+
+  .card-btn {
+    margin-left: calc(50% - 45px);
   }
 }
