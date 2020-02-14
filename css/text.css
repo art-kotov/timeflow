@@ -1,0 +1,43 @@
+.t-header {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 37px;
+  color: #C4C4C4;
+}
+
+.t-body {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 145%;
+  color: #C4C4C4;
+}
+
+.t-subtitle {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+  color: #C4C4C4;
+}
+
+.t-button {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #C4C4C4;
+}
+
+.t-card-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #C4C4C4;
+}
+
+.t-main-menu {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #C4C4C4;
+}
+
+/*# sourceMappingURL=text.css.map */

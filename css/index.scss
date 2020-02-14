@@ -1,0 +1,127 @@
+@import "colors";
+@import "text";
+* {
+  margin: 0;
+  padding: 0;
+}
+// Common
+body {
+  font-family: Helvetica Neue, sans-serif;
+  font-style: normal;
+}
+.wrapper {
+  max-width: 1170px;
+  margin: auto;
+}
+// Header
+.header{
+  &__top {
+    height: 75px;
+    background: $gradient;
+  }
+  &__bottom {
+    height: 58px;
+    background-color: $c-brown;
+  }
+}
+
+.main-nav {
+  height: 100%;
+  img {
+    user-select: none;
+    -webkit-user-drag: none;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    &:hover {
+      .main-nav__link {
+        background-color: #72337b;
+      }
+      .submenu__wrapper {
+        display: block;
+      }
+    }
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 35px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    span {
+      margin-right: 8px;
+    }
+  }
+  .submenu {
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    background-color: #503B53;
+    overflow: hidden;
+    &__wrapper {
+      display: none;
+      width: 260px;
+      height: auto;
+      position: absolute;
+      top: calc(100% - 7px);
+      left: 50%;
+      transform: translateX(-50%);
+      &:before {
+        position: absolute;
+        top: -8px;
+        left: calc(50% - 5px);
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 8px solid #503B53;
+      }
+    }
+    &__item {
+      &:nth-last-child(1) .submenu__link:after {
+        display: none;
+      }
+    }
+    &__link {
+      display: block;
+      position: relative;
+      padding: 6px 14px;
+      font-size: 13px;
+      line-height: 28px;
+      color: white;
+      text-decoration: none;
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 14px;
+        width: calc(100% - 28px);
+        height: 2px;
+        background-color: #432C46;
+      }
+      &:hover {
+        background-color: #432C46;
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+}
