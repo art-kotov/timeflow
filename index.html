@@ -25,53 +25,28 @@
             </ul>
           </div>
         </li>
-        <li class="main-nav__item"><img src="images/logo.svg" width="106" height="42" alt="Timeflow"></li>
-        <li class="main-nav__item"><a class="main-nav__link" href=""><span><img src="images/main-nav/menu_icon_reporting.svg"></span>Reporting</a>
-          <div class="submenu__wrapper">
-            <ul class="submenu">
-              <li class="submenu__item"><a class="submenu__link" href="">Manage Streams</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="">Manage Processors</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="">Manage Simulations</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="">Manage KPIs</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="">Manage Timelines</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="">Manage Data Mappings</a></li>
-            </ul>
-          </div></li>
-        <li class="main-nav__item"><a class="main-nav__link" href=""><span><img src="images/main-nav/menu_icon_workflow.svg"></span>Workflow</a>
-          <div class="submenu__wrapper">
-            <ul class="submenu">
-              <li class="submenu__item"><a class="submenu__link" href="">Manage Streams</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="">Manage Processors</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="">Manage Simulations</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="">Manage KPIs</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="">Manage Timelines</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="">Manage Data Mappings</a></li>
-            </ul>
-          </div></li>
+        <li class="main-nav__item"><img class="logo-image" src="images/logo.svg" width="120" height="56" alt="Timeflow"></li>
+        <li class="main-nav__item"><a class="main-nav__link" href=""><span><img src="images/main-nav/menu_icon_reporting.svg"></span>Reporting</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href=""><span><img src="images/main-nav/menu_icon_workflow.svg"></span>Workflow</a></li>
       </ul>
     </nav>
   </div>
   <div class="header__bottom">
-    <div>
-      <img src="images/submenu/menu_avatar.svg" alt="avatar">
-      <a href="">Darkojanevski@ymail.com</a>
+    <div class="user">
+      <img class="user__avatar" src="images/submenu/menu_avatar.svg" alt="avatar">
+      <a class="user__email" href="">Darkojanevski@ymail.com</a>
     </div>
-    <nav>
+    <nav class="second-nav">
       <ul>
-        <li><a href="">All Logs</a></li>
-        <li><a href="">Pivot Reporting</a></li>
-        <li><a href="">Developer Key</a></li>
-        <li><a href="">Druid Console</a></li>
+        <li class="second-nav__item"><a class="second-nav__link" href="">All Logs</a></li>
+        <li class="second-nav__item"><a class="second-nav__link" href="">Pivot Reporting</a></li>
+        <li class="second-nav__item"><a class="second-nav__link" href="">Developer Key</a></li>
+        <li class="second-nav__item"><a class="second-nav__link" href="">Druid Console</a></li>
       </ul>
     </nav>
-    <div>
-      <button>
-        <object
-            data="images/submenu/menu_icon_logout.svg"
-            type="image/svg+xml"
-            width="15"
-            height="15"
-        ></object>
+    <div class="logout-wrapper">
+      <button class="logout-btn" type="button">
+        <img src="images/submenu/menu_icon_logout.svg" alt="exit icon" width="15" height="15">
         Logout
       </button>
     </div>
