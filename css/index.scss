@@ -28,13 +28,12 @@ img {
   }
   &__bottom {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
     height: 58px;
     background-color: $c-brown;
   }
 }
-
 .main-nav {
   height: 100%;
   ul {
@@ -171,8 +170,6 @@ img {
     text-decoration: none;
   }
 }
-
-
 // logout
 .logout-wrapper {
   justify-self: end;
