@@ -206,6 +206,9 @@
   background-image: url("../images/card_button/eye.svg");
   background-repeat: no-repeat;
 }
+.card-btn--ml {
+  margin-left: calc(50% - 45px);
+}
 
 * {
   margin: 0;
@@ -422,7 +425,7 @@ img {
   margin-top: 35px;
 }
 
-.card, .card--project {
+.card {
   width: 370px;
   border-radius: 15px;
   background: #FFFFFF;
@@ -447,10 +450,6 @@ img {
   align-items: center;
   padding: 15px;
   border-top: 1px solid rgba(209, 197, 218, 0.5);
-}
-
-.card--project .card-btn {
-  margin-left: calc(50% - 45px);
 }
 
 /*# sourceMappingURL=index.css.map */

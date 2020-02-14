@@ -171,4 +171,7 @@
       background-repeat: no-repeat;
     }
   }
+  &--ml {
+    margin-left: calc(50% - 45px);
+  }
 }
