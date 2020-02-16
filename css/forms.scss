@@ -49,3 +49,65 @@ textarea {
     padding: 0 22px 0 12px;
   }
 }
+.form-group {
+  position: relative;
+}
+input:hover + .field-helper {
+  display: block;
+}
+.field-helper {
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 4px);
+  transform: translateY(-50%);
+  display: none;
+  width: 190px;
+  padding: 5px;
+  border: 1px solid #803C8A;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 16px;
+  color: #803C8A;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.11);
+  border-radius: 5px;
+  background: white;
+  z-index: 10;
+  &:after {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: -7px;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid white;
+  }
+  &:before {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: -8px;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid #803C8A;
+  }
+  &__title {
+    display: block;
+    font-family: Helvetica Neue, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 16px;
+  }
+  &__subtitle {
+    font-family: Helvetica Neue, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 19px;
+    color: #828282;
+  }
+}
