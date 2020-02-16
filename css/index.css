@@ -263,17 +263,14 @@ textarea {
 
 .form-group {
   position: relative;
-}
-
-input:hover + .field-helper, textarea:hover + .field-helper {
-  display: block;
+  height: 40px;
 }
 
 .field-helper {
   position: absolute;
-  top: 50%;
-  left: calc(100% + 4px);
-  transform: translateY(-50%);
+  will-change: transform;
+  top: 0;
+  left: 0;
   display: none;
   width: 190px;
   padding: 5px;
@@ -311,15 +308,11 @@ input:hover + .field-helper, textarea:hover + .field-helper {
 }
 .field-helper__title {
   display: block;
-  font-family: Helvetica Neue, sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 13px;
   line-height: 16px;
 }
 .field-helper__subtitle {
-  font-family: Helvetica Neue, sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 13px;
   line-height: 19px;
