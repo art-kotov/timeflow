@@ -15,9 +15,10 @@ const showHelper = (e) => {
 
     helper.append(title, subTitle);
     helper.classList.add('field-helper');
-    helper.style.transform = `translate3d(${window.scrollX + elemParams.x + elemParams.width + 4}px, calc(${window.scrollY + elemParams.y + 20}px - 50%), 0)`;
+    helper.style.transform = `translate3d(${Math.round(window.scrollX + elemParams.x + elemParams.width + 4)}px, ${Math.round(window.scrollY + elemParams.y + elemParams.height/2)}px, 0)`;
     helper.style.display = 'block';
-    document.body.append(helper)
+    document.body.append(helper);
+    helper.style.transform = `translate3d(${Math.round(window.scrollX + elemParams.x + elemParams.width + 4)}px, ${Math.round(window.scrollY + elemParams.y + elemParams.height/2 - helper.getBoundingClientRect().height/2)}px, 0)`;
 };
 
 const hideHelper = () => {

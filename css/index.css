@@ -261,11 +261,6 @@ textarea {
   padding: 0 22px 0 12px;
 }
 
-.form-group {
-  position: relative;
-  height: 40px;
-}
-
 .field-helper {
   position: absolute;
   will-change: transform;
@@ -313,6 +308,7 @@ textarea {
   line-height: 16px;
 }
 .field-helper__subtitle {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: normal;
   font-size: 13px;
   line-height: 19px;
