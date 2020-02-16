@@ -1,8 +1,10 @@
 .t-header {
+  font-family: Helvetica Neue;
+  font-style: normal;
   font-weight: bold;
   font-size: 30px;
   line-height: 37px;
-  color: #C4C4C4;
+  color: #803C8A;
 }
 
 .t-subtitle {
@@ -126,6 +128,7 @@
   left: 50%;
   transform: translateX(-50%);
   display: none;
+  min-width: 44px;
   justify-content: center;
   align-items: center;
   height: 30px;
@@ -379,6 +382,14 @@ img {
   margin-bottom: 40px;
 }
 
+main {
+  padding-top: 60px;
+  background-image: url("../images/body_background.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+}
+
 .logo-image {
   margin: 0 10px;
 }
@@ -582,7 +593,6 @@ img {
   border-radius: 15px;
   background: #FFFFFF;
   box-shadow: 0 6px 12px rgba(164, 109, 255, 0.1);
-  overflow: hidden;
 }
 .card__header {
   text-align: center;
@@ -592,6 +602,8 @@ img {
   line-height: 44px;
   background: linear-gradient(228.39deg, #803C8A 15.56%, #FFCDCE 274.83%);
   color: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 .card__body {
   padding: 15px;
@@ -619,7 +631,7 @@ img {
   background: #F5F5F5;
 }
 .card__field[data-header] {
-  margin-top: 40px;
+  margin-top: 25px;
 }
 .card__field[data-header]:before {
   content: attr(data-header);
@@ -650,6 +662,50 @@ img {
 }
 .card .grid {
   grid-gap: 16px;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.empty__header {
+  font-family: Helvetica Neue, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 37px;
+  color: #803C8A;
+  margin-bottom: 10px;
+}
+.empty__text {
+  font-family: Helvetica Neue, sans-serif;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 145%;
+  text-align: center;
+  color: #4F4F4F;
+  margin-bottom: 70px;
+}
+.empty__image {
+  margin-bottom: 60px;
+}
+
+.dashboard__header {
+  font-family: Helvetica Neue, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 37px;
+  color: #803C8A;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.dashboard__cards {
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
 }
 
 /*# sourceMappingURL=index.css.map */

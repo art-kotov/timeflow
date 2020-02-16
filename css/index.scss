@@ -29,7 +29,13 @@ img {
 .assets {
   margin-bottom: 40px;
 }
-
+main {
+  padding-top: 60px;
+  background-image: url("../images/body_background.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+}
 // Header
 .logo-image {
   margin: 0 10px;
@@ -271,7 +277,6 @@ img {
   border-radius: 15px;
   background: #FFFFFF;
   box-shadow: 0 6px 12px rgba(164, 109, 255, 0.1);
-  overflow: hidden;
 
   &__header {
     text-align: center;
@@ -281,6 +286,8 @@ img {
     line-height: 44px;
     background: $gradient;
     color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
   }
 
   &__body {
@@ -310,7 +317,7 @@ img {
     border-radius: 5px;
     background:#F5F5F5;
     &[data-header] {
-      margin-top: 40px;
+      margin-top: 25px;
       &:before {
         content: attr(data-header);
         display: block;
@@ -344,5 +351,52 @@ img {
   }
   .grid {
     grid-gap: 16px;
+  }
+}
+
+// empty screen
+.empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  &__header {
+    font-family: Helvetica Neue, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+    color: #803C8A;
+    margin-bottom: 10px;
+  }
+  &__text {
+    font-family: Helvetica Neue, sans-serif;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 145%;
+    text-align: center;
+    color: #4F4F4F;
+    margin-bottom: 70px;
+  }
+  &__image {
+    margin-bottom: 60px;
+  }
+}
+// dashboard screen
+.dashboard {
+  &__header {
+    font-family: Helvetica Neue, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+    color: #803C8A;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  &__cards {
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
   }
 }

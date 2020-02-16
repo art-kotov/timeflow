@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<header>
+  <div class="header__top">
+    <nav class="main-nav">
+      <ul>
+        <li class="main-nav__item"><a class="main-nav__link" href=""><span><img src="images/main-nav/menu_icon_project.svg"></span>Project</a></li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="">
+            <span><img src="images/main-nav/menu_icon_manage.svg"></span>Manage</a>
+          <div class="submenu__wrapper">
+            <ul class="submenu">
+              <li class="submenu__item"><a class="submenu__link" href="">Manage Streams</a></li>
+              <li class="submenu__item"><a class="submenu__link" href="">Manage Processors</a></li>
+              <li class="submenu__item"><a class="submenu__link" href="">Manage Simulations</a></li>
+              <li class="submenu__item"><a class="submenu__link" href="">Manage KPIs</a></li>
+              <li class="submenu__item"><a class="submenu__link" href="">Manage Timelines</a></li>
+              <li class="submenu__item"><a class="submenu__link" href="">Manage Data Mappings</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="main-nav__item"><img class="logo-image" src="images/logo.svg" width="120" height="56" alt="Timeflow"></li>
+        <li class="main-nav__item"><a class="main-nav__link" href=""><span><img src="images/main-nav/menu_icon_reporting.svg"></span>Reporting</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href=""><span><img src="images/main-nav/menu_icon_workflow.svg"></span>Workflow</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="header__bottom">
+    <div class="user">
+      <img class="user__avatar" src="images/submenu/menu_avatar.svg" alt="avatar">
+      <a class="user__email" href="">Darkojanevski@ymail.com</a>
+    </div>
+    <nav class="second-nav">
+      <ul>
+        <li class="second-nav__item"><a class="second-nav__link" href="">All Logs</a></li>
+        <li class="second-nav__item"><a class="second-nav__link" href="">Pivot Reporting</a></li>
+        <li class="second-nav__item"><a class="second-nav__link" href="">Developer Key</a></li>
+        <li class="second-nav__item"><a class="second-nav__link" href="">Druid Console</a></li>
+      </ul>
+    </nav>
+    <div class="logout-wrapper">
+      <button class="logout-btn" type="button">
+        <img src="images/submenu/menu_icon_logout.svg" alt="exit icon" width="15" height="15">
+        Logout
+      </button>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="empty">
+    <h2 class="empty__header">Manage Stream Processors</h2>
+    <span class="empty__text">No stream processors are available.</span>
+    <img
+        src="images/empty.svg"
+        width="155"
+        height="134"
+        alt="no data"
+        class="empty__image"
+    >
+    <button class="btn">Add Stream Processor</button>
+  </div>
+</main>
+<script src="js.js"></script>
+</body>
+</html>
