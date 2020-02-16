@@ -1,0 +1,51 @@
+input, select {
+  width: 100%;
+  min-width: 120px;
+  height: 40px;
+  padding: 0 12px;
+  background: #FFFFFF;
+  border: 1px solid #D1C5DA;
+  border-radius: 5px;
+  outline: none;
+  font-family: Helvetica Neue, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  color: #111111;
+  box-sizing: border-box;
+  &:focus {
+    border: 1px solid #803C8A;
+  }
+}
+textarea {
+  @extend input;
+  height: auto;
+  line-height: 145%;
+  padding: 10px 12px;
+}
+
+
+.styled-select {
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  &:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 7px;
+    display: block;
+    width: 26px;
+    height: 26px;
+    margin-right: 3px;
+    border-left: 1px solid #D1C5DA;
+    pointer-events: none;
+    background: url("../images/double-arrow.svg") no-repeat center center;
+  }
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0 22px 0 12px;
+  }
+}

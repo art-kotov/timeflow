@@ -210,6 +210,57 @@
   margin-left: calc(50% - 45px);
 }
 
+input, textarea, select {
+  width: 100%;
+  min-width: 120px;
+  height: 40px;
+  padding: 0 12px;
+  background: #FFFFFF;
+  border: 1px solid #D1C5DA;
+  border-radius: 5px;
+  outline: none;
+  font-family: Helvetica Neue, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  color: #111111;
+  box-sizing: border-box;
+}
+input:focus, textarea:focus, select:focus {
+  border: 1px solid #803C8A;
+}
+
+textarea {
+  height: auto;
+  line-height: 145%;
+  padding: 10px 12px;
+}
+
+.styled-select {
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.styled-select:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 7px;
+  display: block;
+  width: 26px;
+  height: 26px;
+  margin-right: 3px;
+  border-left: 1px solid #D1C5DA;
+  pointer-events: none;
+  background: url("../images/double-arrow.svg") no-repeat center center;
+}
+.styled-select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0 22px 0 12px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -241,7 +292,7 @@ img {
 
 .header__top {
   height: 75px;
-  background: linear-gradient(to left, #803C8A 15%, #FFCDCE 250%);
+  background: linear-gradient(228.39deg, #803C8A 15.56%, #FFCDCE 274.83%);
 }
 .header__bottom {
   display: grid;
@@ -343,6 +394,9 @@ img {
   display: none;
 }
 
+.second-nav {
+  height: 100%;
+}
 .second-nav ul {
   display: flex;
   justify-content: center;
@@ -352,18 +406,23 @@ img {
   list-style: none;
 }
 .second-nav__item {
-  margin: 0 18px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 .second-nav__link {
-  padding: 4px;
-  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 15px;
   color: white;
-  line-height: 19px;
   text-decoration: none;
   cursor: pointer;
 }
 .second-nav__link:hover {
-  text-decoration: underline;
+  background-color: #2C242D;
 }
 
 .user {
@@ -438,7 +497,7 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 44px;
-  background: linear-gradient(to left, #803C8A 15%, #FFCDCE 250%);
+  background: linear-gradient(228.39deg, #803C8A 15.56%, #FFCDCE 274.83%);
   color: white;
 }
 .card__body {

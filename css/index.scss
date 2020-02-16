@@ -1,6 +1,7 @@
 @import "colors";
 @import "text";
 @import "buttons";
+@import "forms";
 
 * {
   margin: 0;
@@ -161,6 +162,7 @@ img {
 }
 
 .second-nav {
+  height: 100%;
   ul {
     display: flex;
     justify-content: center;
@@ -173,19 +175,23 @@ img {
   }
 
   &__item {
-    margin: 0 18px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
   }
 
   &__link {
-    padding: 4px;
-    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 15px;
     color: white;
-    line-height: 19px;
     text-decoration: none;
     cursor: pointer;
-
     &:hover {
-      text-decoration: underline;
+      background-color: #2C242D;
     }
   }
 }
