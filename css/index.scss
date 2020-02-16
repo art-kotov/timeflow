@@ -2,6 +2,7 @@
 @import "text";
 @import "buttons";
 @import "forms";
+@import "grid";
 
 * {
   margin: 0;
@@ -293,5 +294,55 @@ img {
     align-items: center;
     padding: 15px;
     border-top: 1px solid rgba(209, 197, 218, 0.5);
+  }
+  &__field {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin-bottom: 20px;
+    font-family: Helvetica Neue, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    border: 1px solid #D1C5DA;
+    border-radius: 5px;
+    background:#F5F5F5;
+    &[data-header] {
+      margin-top: 40px;
+      &:before {
+        content: attr(data-header);
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: -25px;
+        left: 0;
+        text-align: center;
+
+        font-family: Helvetica Neue, sans-serif;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+
+        color: #828282;
+      }
+    }
+    &--bold {
+      font-weight: 500;
+    }
+    &--green {
+      color: #3FD260;
+      border: 1px solid #3FD260;
+      background: #F5FFF6;
+    }
+    &--red {
+      color: #EB5656;
+      border: 1px solid #EB5656;
+      background: #FFF5F5;
+    }
+  }
+  .grid {
+    grid-gap: 16px;
   }
 }

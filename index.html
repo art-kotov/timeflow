@@ -92,7 +92,9 @@
 </div>
 <div class="assets">
   <h1>Card Actions</h1>
-  <button class="card-action delete"></button>
+  <button class="card-action delete">
+    <span class="helper">Delete</span>
+  </button>
   <button class="card-action deploy"></button>
   <button class="card-action duplicate"></button>
   <button class="card-action edit"></button>
@@ -139,8 +141,12 @@
       Customer Value Project
     </h2>
     <div class="card__body">
-      <label for="owner">123</label>
-      <input type="email" name="owner" id="owner">
+        <div class="card__field" data-header="Project Owner">Text</div>
+        <span class="card__field card__field--bold card__field--green" data-header="Project Owner">Text</span>
+      <div class="grid grid-columns--2">
+        <span class="card__field card__field--red">Text</span>
+        <span class="card__field">Text</span>
+      </div>
     </div>
     <div class="card__footer">
       <button class="card-btn card-btn--show card-btn--ml">
