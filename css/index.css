@@ -640,6 +640,7 @@ main {
   align-items: center;
   height: 100%;
   padding: 0 15px;
+  font-size: 13px;
   color: white;
   text-decoration: none;
   cursor: pointer;
@@ -788,7 +789,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
 }
 .empty__header {
   font-family: Helvetica Neue, sans-serif;
