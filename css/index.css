@@ -497,6 +497,10 @@ body {
   font-family: Helvetica Neue, sans-serif;
   font-style: normal;
   background-color: #F5F6FD;
+  background-image: url("../images/body_background.png");
+  background-repeat: no-repeat;
+  background-position: center 133px;
+  background-size: contain;
 }
 
 img {
@@ -515,10 +519,6 @@ img {
 
 main {
   padding-top: 60px;
-  background-image: url("../images/body_background.png");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: contain;
 }
 
 .logo-image {
