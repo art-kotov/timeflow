@@ -29,6 +29,7 @@ img {
 .assets {
   margin-bottom: 40px;
 }
+
 main {
   padding-top: 60px;
   background-image: url("../images/body_background.png");
@@ -401,5 +402,117 @@ main {
     grid-column-gap: 20px;
     grid-row-gap: 30px;
     justify-items: center;
+  }
+}
+// new item
+.new-item {
+  &__header {
+    font-family: Helvetica Neue, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+    color: #803C8A;
+    text-align: left;
+    margin-bottom: 40px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid $c-purple;
+  }
+  &__title {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    input {
+      grid-area: 1/1/2/7;
+    }
+    textarea {
+      grid-area: 1/7/3/13;
+    }
+    .styled-select {
+      grid-area: 2/1/3/7;
+    }
+  }
+  &__body {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  &__step {
+    position: relative;
+    width: 100%;
+    margin-top: 46px;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 6px 12px rgba(164, 109, 255, 0.1);
+    &:nth-last-of-type(1) {
+      margin-bottom: 46px;
+      &:after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: calc(50% - 1px);
+        display: block;
+        width: 2px;
+        height: 46px;
+        background-color: $c-purple;
+      }
+    }
+    + .new-item__step:before {
+      content: "";
+      position: absolute;
+      bottom: 100%;
+      left: calc(50% - 13px);
+      display: block;
+      width: 26px;
+      height: 46px;
+      background: url("../images/step_connector.svg") no-repeat center center;
+    }
+    td, th {
+      padding: 10px;
+      vertical-align: top;
+      text-align: left;
+    }
+    th:nth-child(1) {
+      border-top-left-radius: 5px;
+    }
+    th:nth-last-child(1) {
+      border-top-right-radius: 5px;
+    }
+    td {
+      input, select, textarea {
+        margin-bottom: 10px;
+      }
+      textarea {
+        height: 90px;
+      }
+    }
+    th {
+      font-family: Helvetica Neue, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 145%;
+      color: #FFFFFF;
+    }
+    tr {
+      &:first-child {
+        height: 40px;
+        background: $gradient;
+      }
+      td:nth-child(1) {
+        padding-left: 20px;
+      }
+      td:nth-child(1),
+      td:nth-child(2){
+        width: 25%;
+      }
+      td:last-child {
+        min-width: 195px;
+        padding-right: 20px;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
   }
 }
