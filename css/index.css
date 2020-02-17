@@ -711,6 +711,9 @@ main {
   justify-items: center;
 }
 
+.new-item {
+  margin-bottom: 100px;
+}
 .new-item__header {
   font-family: Helvetica Neue, sans-serif;
   font-style: normal;
@@ -740,7 +743,12 @@ main {
 }
 .new-item__body {
   text-align: center;
-  margin-bottom: 100px;
+}
+.new-item__footer {
+  margin-top: 45px;
+  padding-top: 25px;
+  border-top: 1px solid #803C8A;
+  text-align: right;
 }
 .new-item__step {
   position: relative;
