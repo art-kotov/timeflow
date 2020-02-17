@@ -1,4 +1,4 @@
-input, select {
+input:not([type="checkbox"]), select {
   width: 100%;
   min-width: 120px;
   height: 40px;
@@ -13,12 +13,83 @@ input, select {
   font-size: 13px;
   color: #111111;
   box-sizing: border-box;
+
   &:focus {
     border: 1px solid #803C8A;
   }
 }
+
+.checkbox-container {
+  position: relative;
+  width: 100%;
+  display: block;
+  padding-right: 22px;
+  line-height: 22px;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 19px;
+    height: 19px;
+    border-radius: 5px;
+    border: 1px solid #D1C5DA;
+    background-color: white;
+  }
+
+  /* On mouse-over, add a grey background color */
+  &:hover input ~ .checkmark {
+    border: 1px solid #9d4da8;
+    background-color: #9d4da8;
+  }
+
+  /* When the checkbox is checked, add a blue background */
+  input:checked ~ .checkmark {
+    border: 1px solid $c-purple;
+    background-color: $c-purple;
+  }
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the checkmark when checked */
+  input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  /* Style the checkmark/indicator */
+  .checkmark:after {
+    left: 6px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+
 textarea {
-  @extend input;
+  @extend select;
   height: auto;
   line-height: 145%;
   padding: 10px 12px;
@@ -28,6 +99,7 @@ textarea {
   position: relative;
   border-radius: 5px;
   overflow: hidden;
+
   &:after {
     content: "";
     position: absolute;
@@ -41,18 +113,21 @@ textarea {
     pointer-events: none;
     background: url("../images/double-arrow.svg") no-repeat center center;
   }
+
   &.disabled {
     &:after {
       border-left: none;
     }
   }
+
   select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     padding: 0 22px 0 12px;
+
     &[disabled] {
-        background-color: #F5F5F5;
+      background-color: #F5F5F5;
     }
   }
 }
@@ -74,6 +149,7 @@ textarea {
   border-radius: 5px;
   background: white;
   z-index: 10;
+
   &:after {
     position: absolute;
     top: calc(50% - 8px);
@@ -85,6 +161,7 @@ textarea {
     border-bottom: 8px solid transparent;
     border-right: 8px solid white;
   }
+
   &:before {
     position: absolute;
     top: calc(50% - 8px);
@@ -96,12 +173,14 @@ textarea {
     border-bottom: 8px solid transparent;
     border-right: 8px solid #803C8A;
   }
+
   &__title {
     display: block;
     font-weight: bold;
     font-size: 13px;
     line-height: 16px;
   }
+
   &__subtitle {
     font-weight: normal;
     font-size: 13px;

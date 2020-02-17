@@ -53,7 +53,7 @@
   </div>
 </header>
 <main>
-  <div class="new-item wrapper">
+  <div class="new-item new-item--simulation wrapper">
     <h2 class="new-item__header">
       New Stream Processor
     </h2>
@@ -95,7 +95,9 @@
           <tr>
             <th>Step Name</th>
             <th>Description</th>
-            <th>Step Definition</th>
+            <th>Topic</th>
+            <th>Event Definition (JSON)</th>
+            <th>Delay</th>
             <th>Actions</th>
           </tr>
           <tr>
@@ -106,18 +108,35 @@
               <textarea name="" id=""></textarea>
             </td>
             <td>
-              <div class="styled-select">
-                <select>
+              <div class="styled-select disabled">
+                <select disabled>
                   <option value="">1st option</option>
                   <option value="">2st</option>
                   <option value="">3st</option>
                   <option value="">4st</option>
                 </select>
               </div>
-              <input type="text">
-              <input type="text">
             </td>
             <td>
+              <input type="text">
+                <label for="ck" class="checkbox-container">
+                  Contains Regular Expression
+                  <input type="checkbox" id="ck">
+                  <span class="checkmark"></span>
+                </label>
+            </td>
+            <td>
+              <div class="styled-select disabled">
+                <select disabled>
+                  <option value="">1st option</option>
+                  <option value="">2st</option>
+                  <option value="">3st</option>
+                  <option value="">4st</option>
+                </select>
+              </div>
+              <input type="number">
+            </td>
+            <td class="new-item__actions">
               <button class="card-action arrow-bot"></button>
               <button class="card-action arrow-top"></button>
               <button class="card-btn card-btn--delete">
@@ -130,7 +149,9 @@
           <tr>
             <th>Step Name</th>
             <th>Description</th>
-            <th>Step Definition</th>
+            <th>Topic</th>
+            <th>Event Definition (JSON)</th>
+            <th>Delay</th>
             <th>Actions</th>
           </tr>
           <tr>
@@ -141,18 +162,35 @@
               <textarea name="" id=""></textarea>
             </td>
             <td>
-              <div class="styled-select">
-                <select>
+              <div class="styled-select disabled">
+                <select disabled>
                   <option value="">1st option</option>
                   <option value="">2st</option>
                   <option value="">3st</option>
                   <option value="">4st</option>
                 </select>
               </div>
-              <input type="text">
-              <input type="text">
             </td>
             <td>
+              <input type="text">
+              <label for="ck" class="checkbox-container">
+                Contains Regular Expression
+                <input type="checkbox" id="ck">
+                <span class="checkmark"></span>
+              </label>
+            </td>
+            <td>
+              <div class="styled-select disabled">
+                <select disabled>
+                  <option value="">1st option</option>
+                  <option value="">2st</option>
+                  <option value="">3st</option>
+                  <option value="">4st</option>
+                </select>
+              </div>
+              <input type="number">
+            </td>
+            <td class="new-item__actions">
               <button class="card-action arrow-bot"></button>
               <button class="card-action arrow-top"></button>
               <button class="card-btn card-btn--delete">
@@ -165,7 +203,9 @@
           <tr>
             <th>Step Name</th>
             <th>Description</th>
-            <th>Step Definition</th>
+            <th>Topic</th>
+            <th>Event Definition (JSON)</th>
+            <th>Delay</th>
             <th>Actions</th>
           </tr>
           <tr>
@@ -176,18 +216,35 @@
               <textarea name="" id=""></textarea>
             </td>
             <td>
-              <div class="styled-select">
-                <select>
+              <div class="styled-select disabled">
+                <select disabled>
                   <option value="">1st option</option>
                   <option value="">2st</option>
                   <option value="">3st</option>
                   <option value="">4st</option>
                 </select>
               </div>
-              <input type="text">
-              <input type="text">
             </td>
             <td>
+              <input type="text">
+              <label for="ck" class="checkbox-container">
+                Contains Regular Expression
+                <input type="checkbox" id="ck">
+                <span class="checkmark"></span>
+              </label>
+            </td>
+            <td>
+              <div class="styled-select disabled">
+                <select disabled>
+                  <option value="">1st option</option>
+                  <option value="">2st</option>
+                  <option value="">3st</option>
+                  <option value="">4st</option>
+                </select>
+              </div>
+              <input type="number">
+            </td>
+            <td class="new-item__actions">
               <button class="card-action arrow-bot"></button>
               <button class="card-action arrow-top"></button>
               <button class="card-btn card-btn--delete">
@@ -197,6 +254,7 @@
           </tr>
         </table>
         <button class="btn btn--step">Add new</button>
+        <button class="btn btn--step">New Bulk Steps</button>
       </div>
       <div class="new-item__footer">
         <button class="btn">
