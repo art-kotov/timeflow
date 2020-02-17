@@ -704,8 +704,11 @@ main {
   margin-bottom: 50px;
 }
 .dashboard__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
   grid-column-gap: 20px;
   grid-row-gap: 30px;
+  justify-items: center;
 }
 
 /*# sourceMappingURL=index.css.map */
