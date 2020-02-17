@@ -502,6 +502,10 @@ body {
   background-position: center 133px;
   background-size: contain;
 }
+body.welcome {
+  background-image: url("../images/welcome_bg.png");
+  background-position: center bottom;
+}
 
 img {
   user-select: none;
