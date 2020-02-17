@@ -514,6 +514,8 @@ img {
 
 .wrapper {
   max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: auto;
 }
 
@@ -991,6 +993,69 @@ main {
 }
 .new-item--simulation .new-item__actions .card-btn--delete {
   grid-area: 2/1/3/3;
+}
+
+.stream-card {
+  border-radius: 10px;
+  background-color: #4F4F4F;
+  display: grid;
+  grid-template-columns: 1fr 104px;
+  grid-template-rows: 74px auto;
+  padding: 0 0 15px 15px;
+  height: 120px;
+  box-sizing: border-box;
+}
+.stream-card__val {
+  grid-area: 1/1/2/2;
+  margin-top: 10px;
+  font-family: Helvetica Neue, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 61px;
+  color: #F5F6FD;
+}
+.stream-card__text {
+  grid-area: 2/1/3/2;
+  font-family: Helvetica Neue, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 120%;
+  color: #F5F6FD;
+}
+.stream-card img {
+  transform: translate(0px, 12px);
+  grid-area: 1/2/3/3;
+}
+.stream-card__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-gap: 15px;
+}
+.stream-card--1 {
+  background: linear-gradient(285.91deg, #B4A2C2 -1.42%, #FC5B74 103.2%);
+}
+.stream-card--2 {
+  background: linear-gradient(285.91deg, #B4A2C2 -1.42%, #3775F5 103.2%);
+}
+.stream-card--3 {
+  background: linear-gradient(285.91deg, #B4A2C2 -1.42%, #FE6853 103.2%);
+}
+.stream-card--4 {
+  background: linear-gradient(285.91deg, #B4A2C2 -1.42%, #7E5FE8 103.2%);
+}
+.stream-card--5 {
+  background: linear-gradient(285.91deg, #B4A2C2 -1.42%, #4BD4CD 103.2%);
+}
+.stream-card--6 {
+  background: linear-gradient(285.91deg, #B4A2C2 -1.42%, #FFAD71 103.2%);
+}
+.stream-card--7 {
+  background: linear-gradient(285.91deg, #B4A2C2 -1.42%, #13B5F9 103.2%);
+}
+.stream-card--8 {
+  background: linear-gradient(285.91deg, #B4A2C2 -1.42%, #FF8087 103.2%);
 }
 
 /*# sourceMappingURL=index.css.map */

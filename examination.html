@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<header>
+  <div class="header__top">
+    <nav class="main-nav">
+      <ul>
+        <li class="main-nav__item"><a class="main-nav__link" href=""><span><img src="images/main-nav/menu_icon_project.svg"></span>Project</a></li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="">
+            <span><img src="images/main-nav/menu_icon_manage.svg"></span>Manage</a>
+          <div class="submenu__wrapper">
+            <ul class="submenu">
+                <li class="submenu__item"><a class="submenu__link" href="">Manage Streams</a></li>
+                <li class="submenu__item"><a class="submenu__link" href="">Manage Processors</a></li>
+                <li class="submenu__item"><a class="submenu__link" href="">Manage Simulations</a></li>
+                <li class="submenu__item"><a class="submenu__link" href="">Manage KPIs</a></li>
+                <li class="submenu__item"><a class="submenu__link" href="">Manage Timelines</a></li>
+                <li class="submenu__item"><a class="submenu__link" href="">Manage Data Mappings</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="main-nav__item"><img class="logo-image" src="images/logo.svg" width="120" height="56" alt="Timeflow"></li>
+        <li class="main-nav__item"><a class="main-nav__link" href=""><span><img src="images/main-nav/menu_icon_reporting.svg"></span>Reporting</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href=""><span><img src="images/main-nav/menu_icon_workflow.svg"></span>Workflow</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="header__bottom">
+    <div class="user">
+      <img class="user__avatar" src="images/submenu/menu_avatar.svg" alt="avatar">
+      <a class="user__email" href="">Darkojanevski@ymail.com</a>
+    </div>
+    <nav class="second-nav">
+      <ul>
+        <li class="second-nav__item"><a class="second-nav__link" href="">All Logs</a></li>
+        <li class="second-nav__item"><a class="second-nav__link" href="">Pivot Reporting</a></li>
+        <li class="second-nav__item"><a class="second-nav__link" href="">Developer Key</a></li>
+        <li class="second-nav__item"><a class="second-nav__link" href="">Druid Console</a></li>
+      </ul>
+    </nav>
+    <div class="logout-wrapper">
+      <button class="logout-btn" type="button">
+        <img src="images/submenu/menu_icon_logout.svg" alt="exit icon" width="15" height="15">
+        Logout
+      </button>
+    </div>
+  </div>
+</header>
+<main class="wrapper">
+  <div>
+
+  </div>
+  <div class="stream-card__wrapper">
+    <div class="stream-card stream-card--1">
+      <span class="stream-card__val">123</span>
+      <span class="stream-card__text">Number of Streams</span>
+      <img src="images/icon_number_of_streams.svg" alt="number of streams">
+    </div>
+    <div class="stream-card stream-card--2">
+      <span class="stream-card__val">43</span>
+      <span class="stream-card__text">Number of Stream Processors</span>
+      <img src="images/icon_number_of_stream_processors.svg" alt="number of streams">
+    </div>
+    <div class="stream-card stream-card--3">
+      <span class="stream-card__val">43</span>
+      <span class="stream-card__text">Number of Simulations</span>
+      <img src="images/icon_number_of_simulations.svg" alt="number of streams">
+    </div>
+    <div class="stream-card stream-card--4">
+      <span class="stream-card__val">43</span>
+      <span class="stream-card__text">Number of Reports</span>
+      <img src="images/icon_number_of_reports.svg" alt="number of streams">
+    </div>
+
+    <div class="stream-card stream-card--5">
+      <span class="stream-card__val">43</span>
+      <span class="stream-card__text">Running Stream Processor Instances</span>
+      <img src="images/icon_running_stream_processors_instances.svg" alt="number of streams">
+    </div>
+    <div class="stream-card stream-card--6">
+      <span class="stream-card__val">43</span>
+      <span class="stream-card__text">Messages Processed</span>
+      <img src="images/icon_messages_processed.svg" alt="number of streams">
+    </div>
+    <div class="stream-card stream-card--7">
+      <span class="stream-card__val">43</span>
+      <span class="stream-card__text">Messages Published</span>
+      <img src="images/icon_messages_published.svg" alt="number of streams">
+    </div>
+    <div class="stream-card stream-card--8">
+      <span class="stream-card__val">43</span>
+      <span class="stream-card__text">Workflow Tasks</span>
+      <img src="images/icon_workflow_tasks.svg" alt="number of streams">
+    </div>
+  </div>
+</main>
+<script src="js.js"></script>
+</body>
+</html>
