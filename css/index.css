@@ -449,9 +449,10 @@ textarea {
   background-image: url("../images/password-input.svg");
 }
 .login-screen img {
-  margin-bottom: 55px;
+  margin-bottom: 50px;
 }
 .login-screen button {
+  width: 235px;
   margin-top: 15px;
   margin-bottom: 25px;
   background-color: #432C46;
@@ -461,6 +462,7 @@ textarea {
   background-color: #2c1d2e;
 }
 .login-screen span {
+  font-size: 13px;
   color: white;
 }
 .login-screen span a {
