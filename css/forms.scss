@@ -41,11 +41,19 @@ textarea {
     pointer-events: none;
     background: url("../images/double-arrow.svg") no-repeat center center;
   }
+  &.disabled {
+    &:after {
+      border-left: none;
+    }
+  }
   select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     padding: 0 22px 0 12px;
+    &[disabled] {
+        background-color: #F5F5F5;
+    }
   }
 }
 
