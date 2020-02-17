@@ -1,0 +1,8 @@
+.login-screen {
+  width: 100vw;
+  height: 100vh;
+  background: url("../images/login-bg.png") no-repeat center center;
+  background-size: contain;
+}
+
+/*# sourceMappingURL=login.css.map */

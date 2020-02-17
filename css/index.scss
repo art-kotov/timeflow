@@ -3,7 +3,7 @@
 @import "buttons";
 @import "forms";
 @import "grid";
-
+@import "login";
 * {
   margin: 0;
   padding: 0;
@@ -429,6 +429,7 @@ main {
     grid-template-columns: repeat(12, 1fr);
     //grid-template-rows: 1fr 1fr;
     grid-gap: 20px;
+    margin-bottom: 46px;
   }
   &__name {
     grid-area: 1/1/2/7;
