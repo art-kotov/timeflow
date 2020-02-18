@@ -122,6 +122,10 @@
 .card-action.arrow-top {
   background-image: url("../images/card_button/arrow-top.svg");
 }
+.card-action.export {
+  background-image: url("../images/card_button/export.svg");
+  background-position-x: 13px;
+}
 .card-action .helper {
   position: absolute;
   top: calc(100% - 2px);
@@ -1017,6 +1021,7 @@ main {
   padding: 0 0 15px 15px;
   height: 120px;
   box-sizing: border-box;
+  cursor: pointer;
 }
 .stream-card__val {
   grid-area: 1/1/2/2;
@@ -1045,6 +1050,46 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   grid-gap: 15px;
+}
+.stream-card__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.stream-card__header h2 {
+  margin-bottom: 30px;
+  font-family: Helvetica Neue, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 37px;
+  color: #333333;
+}
+.stream-card__header span {
+  font-family: Helvetica Neue, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 145%;
+  color: #333333;
+}
+.stream-card__header div:first-child {
+  max-width: 50%;
+}
+.stream-card__header div:last-child {
+  text-align: right;
+  margin-top: 20px;
+}
+.stream-card__header div:last-child div {
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+.stream-card__header div:last-child button {
+  margin-left: 15px;
+}
+.stream-card:hover {
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
 }
 .stream-card--1 {
   background: linear-gradient(285.91deg, #B4A2C2 -1.42%, #FC5B74 103.2%);

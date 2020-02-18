@@ -85,6 +85,10 @@
   &.arrow-top {
     background-image: url("../images/card_button/arrow-top.svg");
   }
+  &.export {
+    background-image: url("../images/card_button/export.svg");
+    background-position-x: 13px;
+  }
   .helper {
     position: absolute;
     top: calc(100% - 2px);

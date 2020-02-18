@@ -569,6 +569,7 @@ main {
   padding: 0 0 15px 15px;
   height: 120px;
   box-sizing: border-box;
+  cursor: pointer;
   &__val {
     grid-area: 1/1/2/2;
     margin-top: 10px;
@@ -598,13 +599,68 @@ main {
     grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
     grid-gap: 15px;
   }
-
-  &--1 {background: linear-gradient(285.91deg, #B4A2C2 -1.42%, #FC5B74 103.2%);}
-  &--2 {background: linear-gradient(285.91deg, #B4A2C2 -1.42%, #3775F5 103.2%);}
-  &--3 {background: linear-gradient(285.91deg, #B4A2C2 -1.42%, #FE6853 103.2%);}
-  &--4 {background: linear-gradient(285.91deg, #B4A2C2 -1.42%, #7E5FE8 103.2%);}
-  &--5 {background: linear-gradient(285.91deg, #B4A2C2 -1.42%, #4BD4CD 103.2%);}
-  &--6 {background: linear-gradient(285.91deg, #B4A2C2 -1.42%, #FFAD71 103.2%);}
-  &--7 {background: linear-gradient(285.91deg, #B4A2C2 -1.42%, #13B5F9 103.2%);}
-  &--8 {background: linear-gradient(285.91deg, #B4A2C2 -1.42%, #FF8087 103.2%);}
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    h2 {
+      margin-bottom: 30px;
+      font-family: Helvetica Neue, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 37px;
+      color: #333333;
+    }
+    span {
+      font-family: Helvetica Neue, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 145%;
+      color: #333333;
+    }
+    div:first-child {
+      max-width: 50%;
+    }
+    div:last-child {
+      text-align: right;
+      margin-top: 20px;
+      div {
+        margin-top: 15px;
+        display: flex;
+        justify-content: flex-end;
+      }
+      button {
+        margin-left: 15px;
+      }
+    }
+  }
+  &:hover {
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  }
+  &--1 {
+    background: linear-gradient(285.91deg, #B4A2C2 -1.42%, #FC5B74 103.2%);
+  }
+  &--2 {
+    background: linear-gradient(285.91deg, #B4A2C2 -1.42%, #3775F5 103.2%);
+  }
+  &--3 {
+    background: linear-gradient(285.91deg, #B4A2C2 -1.42%, #FE6853 103.2%);
+  }
+  &--4 {
+    background: linear-gradient(285.91deg, #B4A2C2 -1.42%, #7E5FE8 103.2%);
+  }
+  &--5 {
+    background: linear-gradient(285.91deg, #B4A2C2 -1.42%, #4BD4CD 103.2%);
+  }
+  &--6 {
+    background: linear-gradient(285.91deg, #B4A2C2 -1.42%, #FFAD71 103.2%);
+  }
+  &--7 {
+    background: linear-gradient(285.91deg, #B4A2C2 -1.42%, #13B5F9 103.2%);
+  }
+  &--8 {
+    background: linear-gradient(285.91deg, #B4A2C2 -1.42%, #FF8087 103.2%);
+  }
 }
