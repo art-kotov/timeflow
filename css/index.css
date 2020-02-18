@@ -452,15 +452,7 @@ textarea {
 .login-screen input {
   margin-bottom: 20px;
   color: #803C8A;
-  background-repeat: no-repeat;
-  background-position: 15px center;
   padding-left: 40px;
-}
-.login-screen input[type=text] {
-  background-image: url("../images/user-input.svg");
-}
-.login-screen input[type=password] {
-  background-image: url("../images/password-input.svg");
 }
 .login-screen img {
   margin-bottom: 50px;
@@ -486,6 +478,27 @@ textarea {
 .login-screen form {
   max-width: 300px;
   text-align: center;
+}
+
+.input-email,
+.input-password {
+  position: relative;
+}
+.input-email__icon,
+.input-password__icon {
+  position: absolute;
+  top: 14px;
+  left: 15px;
+  display: block;
+  width: 13px;
+  height: 13px;
+  background: url("../images/user-input.svg") no-repeat center center;
+}
+
+.input-password__icon {
+  top: 13px;
+  left: 14px;
+  background: url("../images/password-input.svg") no-repeat center center;
 }
 
 * {

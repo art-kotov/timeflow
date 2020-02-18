@@ -10,15 +10,7 @@
   input {
     margin-bottom: 20px;
     color: $c-purple;
-    background-repeat: no-repeat;
-    background-position: 15px center;
     padding-left: 40px;
-    &[type="text"] {
-      background-image: url("../images/user-input.svg");
-    }
-    &[type="password"] {
-      background-image: url("../images/password-input.svg");
-    }
   }
   img {
     margin-bottom: 50px;
@@ -44,5 +36,26 @@
   form {
     max-width: 300px;
     text-align: center;
+  }
+}
+
+.input-email,
+.input-password {
+  position: relative;
+  &__icon {
+    position: absolute;
+    top: 14px;
+    left: 15px;
+    display: block;
+    width: 13px;
+    height: 13px;
+    background: url("../images/user-input.svg") no-repeat center center;
+  }
+}
+.input-password {
+  &__icon {
+    top: 13px;
+    left: 14px;
+    background: url("../images/password-input.svg") no-repeat center center;
   }
 }
