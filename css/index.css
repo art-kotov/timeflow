@@ -1206,16 +1206,25 @@ main {
 .project-card__processors .card__field i.black-icon {
   background: url("../images/project-card-black.svg") no-repeat center center;
 }
-.project-card__footer {
+.project-card__btns {
   grid-area: 2/1/3/3;
   display: flex;
   align-self: end;
 }
-.project-card__footer .card-action {
+.project-card__btns .card-action {
   margin-right: 15px;
 }
-.project-card__footer .card-btn {
+.project-card__btns .card-btn {
   margin-left: auto;
+}
+.project-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 45px;
+  margin-bottom: 100px;
+  padding-top: 25px;
+  border-top: 1px solid #803C8A;
 }
 
 /*# sourceMappingURL=index.css.map */
